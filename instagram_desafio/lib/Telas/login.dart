@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
@@ -19,7 +18,7 @@ class Login extends StatelessWidget {
               child: Icon(Icons.arrow_back_ios, color: Colors.white),
             ),
             SizedBox(
-              height: 180,
+              height: 180/2,
             ),
             Container(
                 child: Center(
@@ -55,13 +54,43 @@ class Login extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 15),
+            SizedBox(height: 30),
             Container(
               height: 60,
               width: MediaQuery.of(context).size.width - 16,
               child: ElevatedButton(
                   onPressed: () {}, child: Text("Iniciar sessão")),
             ),
+            SizedBox(
+              height: 20,
+            ),
+             Column(
+               children: [
+                 Row(
+                     mainAxisAlignment: MainAxisAlignment.center,     
+                     children: [
+                     Text("___________________________",style: TextStyle(color: Colors.white),
+                     ),
+                     Text(" ou ",style: TextStyle(color: Colors.white),
+                     ),
+                    Text("____________________________",style: TextStyle(color: Colors.white),),
+
+                   ],
+
+                 ),
+                 SizedBox(
+                   height: 30,
+                 ),
+                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,     
+
+                   children: [
+                     Icon(Icons.facebook,color: Colors.blue,),
+                     Text("Continuar como Evandro armando",style: TextStyle(color:Colors.blue),)
+                   ],
+                 )
+               ],
+             ),
             Expanded(child: Container()),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
